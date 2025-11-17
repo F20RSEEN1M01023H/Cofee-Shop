@@ -45,7 +45,7 @@ const App = () => {
             desc: "Start your day with a cup that energizes your soul and inspires your journey.",
             img: coffee1,
             primary: "Download App",
-            secondary: "Shop Iqra's Coffee",
+            secondary: "Shop Hammad's Cofee",
           },
           {
             id: 2,
@@ -53,7 +53,7 @@ const App = () => {
             desc: "Start your day with a cup that energizes your soul and inspires your journey.",
             img: coffee2,
             primary: "Download App",
-            secondary: "Shop Iqra's Coffee",
+            secondary: "Shop Hammad's Cofee",
           },
           {
             id: 3,
@@ -61,7 +61,7 @@ const App = () => {
             desc: "Start your day with a cup that energizes your soul and inspires your journey.",
             img: coffee3,
             primary: "Download App",
-            secondary: "Shop Iqra's Coffee",
+            secondary: "Shop Hammad's Cofee",
           },
         ]}
       />

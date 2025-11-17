@@ -57,17 +57,17 @@ export default function SectionTwo({ slides = [] }) {
                   </div>
                 </div>
                 <div
-                  className=" w-full relative"
+                  className=" w-full relative mt-5 md:mt-0"
                   data-aos="fade-up"
                   data-aos-duration="3000"
                 >
-                  <div className="absolute top-[-20px] right-25 z-10 opacity-70">
+                  <div className="absolute top-[-20px] left-58 sm:top-[-25px] sm:left-64 z-10 ">
                     <img src={cafe} alt="" className="h-20 w-20" />
                   </div>
                   <img
                     src={s.img}
                     alt={s.title}
-                    className="w-full h-[400px] block"
+                    className="w-95 h-[350px] block"
                     loading="lazy"
                   />
                 </div>
