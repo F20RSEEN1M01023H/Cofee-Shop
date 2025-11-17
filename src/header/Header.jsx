@@ -7,7 +7,7 @@ const Header = ({ CofeeMenu = [] }) => {
 
   return (
     <div>
-      <header className="w-full bg-slate-100">
+      <header className="w-full bg-slate-100 border-b border-gray-300">
         <div className=" px-2 sm:px-4">
           <div className="flex items-center justify-between h-16">
             <div className=" flex items-center">
@@ -42,7 +42,7 @@ const Header = ({ CofeeMenu = [] }) => {
                 </button>
                 <div>
                   {btnOpen && (
-                    <div className="absolute bg-black/90 text-white mt-2 rounded-xl shadow-lg py-2 w-40">
+                    <div className="absolute bg-black/90 text-white mt-2 rounded-xl shadow-lg py-2 w-40 z-10">
                       {CofeeMenu.map((m) => (
                         <a
                           key={m.id}
@@ -96,7 +96,6 @@ const Header = ({ CofeeMenu = [] }) => {
                 Buy Gift Vouchers
               </button>
             </div>
-            {/* hamburger menu toggle here  */}
             <div className="md:hidden">
               <button
                 className="p-2 rounded-md focus:outline-none hover:bg-gray-100 active:scale-95 transform transition duration-150"

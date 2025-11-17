@@ -1,4 +1,3 @@
-// src/components/SectionThree/SectionThree.jsx
 import React from "react";
 import sectionImg from "../assets/coffee-mid.webp";
 
