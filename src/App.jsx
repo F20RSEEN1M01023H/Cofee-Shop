@@ -24,6 +24,8 @@ import avatar3 from "./assets/avatar3.avif";
 import avatar4 from "./assets/avatar4.avif";
 import avatar5 from "./assets/avatar5.avif";
 import Footer from "./footer/Footer";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const App = () => {
   return (
@@ -182,4 +184,10 @@ const App = () => {
   );
 };
 
+AOS.init({
+  duration: 700,
+  easing: "ease-out",
+  once: false,
+  offset: 120,
+});
 export default App;

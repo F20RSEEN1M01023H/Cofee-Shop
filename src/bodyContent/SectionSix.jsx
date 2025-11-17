@@ -8,14 +8,29 @@ export default function SectionSix({ testimonials = [], smallImgs = [] }) {
     <section className="w-full bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+        <h2
+          className="text-3xl md:text-4xl font-bold text-gray-900 mb-3"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           Client Testimonials
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+        <p
+          className="text-gray-600 max-w-2xl mx-auto mb-10"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
           Quench your thirst with our bottled orange brew or relax with a warm,
           delicious coffee.
         </p>
-        <div className="max-w-4xl mx-auto mb-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <div
+          className="max-w-4xl mx-auto mb-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div className="flex items-center justify-center md:justify-end gap-3">
             <div className="flex -space-x-3">
               {smallImgs.map((src, i) => (
@@ -70,7 +85,12 @@ export default function SectionSix({ testimonials = [], smallImgs = [] }) {
           >
             {testimonials.map((t) => (
               <SwiperSlide key={t.id}>
-                <div className="py-4 px-3 w-full max-w-7xl mx-auto">
+                <div
+                  className="py-4 px-3 w-full max-w-7xl mx-auto"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos="zoom-in-left"
+                  data-aos-duration="3000"
+                >
                   <article className="bg-white h-full md:w-80 rounded-xl shadow-sm  shadow-gray-400">
                     <div className="  mb-4 object-cover">
                       <div className="w-full object-cover">

@@ -5,7 +5,12 @@ export default function SectionThree() {
   return (
     <section className="w-full bg-slate-100 py-16 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="w-full  overflow-hidden">
+        <div
+          className="w-full  overflow-hidden"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="zoom-in-left"
+          data-aos-duration="3000"
+        >
           <img
             src={sectionImg}
             alt="Cozy coffee shop interior"
@@ -14,7 +19,12 @@ export default function SectionThree() {
           />
         </div>
 
-        <div className="p-2 md:p-6 lg:p-10">
+        <div
+          className="p-2 md:p-6 lg:p-10"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="zoom-in-left"
+          data-aos-duration="3000"
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Experience the World of Alowishus
           </h2>

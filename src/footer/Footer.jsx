@@ -6,7 +6,12 @@ export default function Footer({ colLinks = {} }) {
     <footer className="w-full bg-white text-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-12 gap-8">
-          <div className="col-span-4">
+          <div
+            className="col-span-4"
+            data-aos-anchor-placement="center-bottom"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          >
             <div className="flex items-start gap-4">
               <img src={logo} alt="Alowishus logo" className="h-12 w-auto" />
             </div>
@@ -25,7 +30,12 @@ export default function Footer({ colLinks = {} }) {
               </a>
             </div>
           </div>
-          <div className="col-span-2">
+          <div
+            className="col-span-2"
+            data-aos-anchor-placement="center-bottom"
+            data-aos="zoom-in-right"
+            data-aos-duration="3000"
+          >
             <h4 className="text-sm font-semibold text-gray-900 mb-4">
               {colLinks.company.title}
             </h4>
@@ -41,7 +51,12 @@ export default function Footer({ colLinks = {} }) {
               ))}
             </nav>
           </div>
-          <div className="col-span-2">
+          <div
+            className="col-span-2"
+            data-aos-anchor-placement="center-bottom"
+            data-aos="zoom-in-left"
+            data-aos-duration="3000"
+          >
             <h4 className="text-sm font-semibold text-gray-900 mb-4">
               {colLinks.products.title}
             </h4>
@@ -58,7 +73,12 @@ export default function Footer({ colLinks = {} }) {
             </nav>
           </div>
 
-          <div className="col-span-2">
+          <div
+            className="col-span-2"
+            data-aos-anchor-placement="center-bottom"
+            data-aos="zoom-in-right"
+            data-aos-duration="3000"
+          >
             <h4 className="text-sm font-semibold text-gray-900 mb-4">
               {colLinks.resources.title}
             </h4>
@@ -74,7 +94,12 @@ export default function Footer({ colLinks = {} }) {
               ))}
             </nav>
           </div>
-          <div className="col-span-2">
+          <div
+            className="col-span-2"
+            data-aos-anchor-placement="center-bottom"
+            data-aos="zoom-in-left"
+            data-aos-duration="3000"
+          >
             <h4 className="text-sm font-semibold text-gray-900 mb-4">
               {colLinks.blogs.title}
             </h4>

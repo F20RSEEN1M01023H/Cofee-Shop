@@ -4,10 +4,16 @@ export default function SectionTwo({ features = [] }) {
   return (
     <section className="w-full bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h2
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+          data-aos="fade-right"
+        >
           Explore Our Alowishus
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-10 text-base sm:text-lg">
+        <p
+          className="text-gray-600 max-w-2xl mx-auto mb-10 text-base sm:text-lg"
+          data-aos="fade-left"
+        >
           Quench your thirst with our bottled orange brew or relax with a warm,
           delicious coffee.
         </p>
@@ -16,6 +22,8 @@ export default function SectionTwo({ features = [] }) {
             <article
               key={f.id}
               className="bg-black/90 rounded-xl p-6 flex flex-col items-start gap-4 hover:shadow-lg transition-shadow duration-200"
+              data-aos="fade-up"
+              data-aos-duration="3000"
               aria-labelledby={`feature-${f.id}-title`}
             >
               <div className="text-center mt-2 w-full">

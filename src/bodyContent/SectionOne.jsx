@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Mousewheel } from "swiper/modules";
@@ -6,25 +6,8 @@ import { Autoplay, Mousewheel } from "swiper/modules";
 import "swiper/css";
 
 import cafe from "../assets/cafe.webp";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function SectionTwo({ slides = [] }) {
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-      easing: "ease-out",
-      once: false,
-      offset: 120,
-      mirror: false,
-    });
-
-    const onLoad = () => AOS.refresh();
-    window.addEventListener("load", onLoad);
-    return () => window.removeEventListener("load", onLoad);
-  }, []);
   return (
     <section className="w-full max-w-7xl mx-auto py-6 px-4 bg-slate-100">
       <Swiper
@@ -39,10 +22,6 @@ export default function SectionTwo({ slides = [] }) {
         }}
         grabCursor={true}
         mousewheel={{ forceToAxis: true, sensitivity: 0.8 }}
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        onSlideChange={() => {
-          setTimeout(() => AOS.refresh(), 50);
-        }}
         className="mySwiper"
       >
         {slides.map((s) => (
@@ -50,7 +29,11 @@ export default function SectionTwo({ slides = [] }) {
             <div className="bg-slate-100 overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 items-center">
                 {/* Text column */}
-                <div className="p-6 md:p-10">
+                <div
+                  className="p-6 md:p-10"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   <h3 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-3">
                     {s.title}
                   </h3>
@@ -75,9 +58,8 @@ export default function SectionTwo({ slides = [] }) {
                 </div>
                 <div
                   className=" w-full relative"
-                  data-aos="zoom-in"
-                  data-aos-duration="800"
-                  data-aos-delay="150"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
                 >
                   <div className="absolute top-[-20px] right-25 z-10 opacity-70">
                     <img src={cafe} alt="" className="h-20 w-20" />
@@ -87,7 +69,6 @@ export default function SectionTwo({ slides = [] }) {
                     alt={s.title}
                     className="w-full h-[400px] block"
                     loading="lazy"
-                    onLoad={() => AOS.refresh()}
                   />
                 </div>
               </div>

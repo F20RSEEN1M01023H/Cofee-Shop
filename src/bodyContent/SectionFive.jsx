@@ -6,7 +6,12 @@ export default function SectionFive() {
   return (
     <section className="w-full bg-slate-100 py-16 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="p-2 md:p-6 lg:p-10">
+        <div
+          className="p-2 md:p-6 lg:p-10"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Instant Coffee At Your Home
           </h2>
@@ -26,7 +31,12 @@ export default function SectionFive() {
             </button>
           </div>
         </div>
-        <div className="p-0 m-0 w-full  h-80 md:h-120 relative overflow-hidden flex flex-col justify-center items-center md:flex md:items-center md:justify-center">
+        <div
+          className="p-0 m-0 w-full  h-80 md:h-120 relative overflow-hidden flex flex-col justify-center items-center md:flex md:items-center md:justify-center"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
           <img
             src={circle}
             alt="Cozy coffee shop interior"

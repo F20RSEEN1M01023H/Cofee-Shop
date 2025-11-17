@@ -4,14 +4,29 @@ export default function SectionFour({ features = [] }) {
   return (
     <section className="w-full bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h2
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
           Explore Our Alowishus
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-10 text-base sm:text-lg">
+        <p
+          className="text-gray-600 max-w-2xl mx-auto mb-10 text-base sm:text-lg"
+          data-aos-anchor-placement="center-bottom"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           Quench your thirst with our bottled orange brew or relax with a warm,
           delicious coffee.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20  mt-20">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20  mt-20"
+          data-aos="flip-right"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="3000"
+        >
           {features.map((f) => (
             <article
               key={f.id}
