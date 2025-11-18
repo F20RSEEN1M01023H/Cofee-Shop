@@ -124,7 +124,7 @@ const Header = ({ CofeeMenu = [] }) => {
           </div>
         </div>
         {menuOpen && (
-          <nav className="md:hidden bg-gray-100 my-2 px-4 pt-3 pb-4 space-y-2 border-t">
+          <nav className="md:hidden bg-gray-100 my-2 px-4 pt-3 pb-4 space-y-2 border-t absolute top-14 w-full z-10 shadow-sm shadow-gray-400">
             <div className=" space-y-2">
               <button
                 onClick={() => setBtnOpen((c) => !c)}
